@@ -38,7 +38,7 @@ def main():
     vgrad(d, (0, 0, W, HORIZON), (13, 18, 46), (64, 38, 84))
     vgrad(d, (0, 380, W, HORIZON), (64, 38, 84), (214, 128, 66))
     # sun glow + disc, low over the sea, left of centre
-    sx, sy, sr = 380, 470, 74
+    sx, sy, sr = 380, 438, 74
     for r, a in ((260, 26), (200, 38), (150, 55), (110, 80)):
         od.ellipse([sx - r, sy - r, sx + r, sy + r], fill=(255, 190, 100, a))
     d.ellipse([sx - sr, sy - sr, sx + sr, sy + sr], fill=(255, 226, 160))
@@ -128,9 +128,9 @@ def main():
     d.ellipse([tx - 4, top_y - 16, tx + 4, top_y - 8], fill=(255, 214, 130))
     # light beams fanning out
     od.polygon([(tx - 14, top_y + 40), (tx - 190, top_y - 30), (tx - 190, top_y + 96)],
-               fill=(255, 210, 120, 46))
+               fill=(255, 210, 120, 72))
     od.polygon([(tx + 14, top_y + 40), (tx + 200, top_y - 10), (tx + 200, top_y + 116)],
-               fill=(255, 210, 120, 46))
+               fill=(255, 210, 120, 72))
     # tower light reflected on the sea
     for i in range(26):
         y = HORIZON + 14 + i * 12
